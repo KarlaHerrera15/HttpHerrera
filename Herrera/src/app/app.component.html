@@ -1,0 +1,9 @@
+@for(vegetali of vettVegetables; track vegetali)
+{
+  <app-vegetable-list [vegetali] = "vegetali"></app-vegetable-list>
+  <button type="button" (click)="add(quantita, vegetali)">AGGIUNGI</button>
+  <input type="text" #quantita>
+
+}
+
+<app-details [vettcartProduct] ="vettcartProduct"></app-details>
